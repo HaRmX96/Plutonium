@@ -6,7 +6,7 @@ from typing import Tuple
 
 class Client():
 	run=False
-	def __init__(self, connect:Tuple[str,int]=("0.tcp.ap.ngrok.io",19382)) -> None:
+	def __init__(self, connect:Tuple[str,int]=("0.tcp.ap.ngrok.io",17025)) -> None:
 		signal.signal(signal.SIGINT, self.exit_gracefully)
 		signal.signal(signal.SIGTERM, self.exit_gracefully)
 		self.stop = False
