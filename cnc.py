@@ -6,7 +6,7 @@ from random import choice
 from typing import Union, Tuple
 from colorama import Fore, init
 
-os.system("cls & title Login to Plutonium 238")
+os.system("clear")
 user=input("Username : ")
 pasw=input("Password : ")
 if user == 'root':
@@ -16,18 +16,18 @@ if user == 'root':
 else:
 	print("Error! Permission Denied")
 	sys.exit(0)
-os.system("cls & title Login to Plutonium 238")
+os.system("clear")
 for i in range(9):
 	print("Loading Server [•]")
 	sleep(0.1)
-	os.system('cls')
+	os.system('clear')
 	print("Loading Server [••]")
 	sleep(0.1)
-	os.system('cls')
+	os.system('clear')
 	print("Loading Server [•••]")
 	sleep(0.1)
-	os.system('cls')
-os.system("Plutonium 238")
+	os.system('clear')
+os.system("clear")
 class Colours:
 	def __init__(self): 
 		if platform.system() == 'Windows':
@@ -106,7 +106,7 @@ class Server(Colours):
 		Thread(target=self.check).start()
 		return True
 	def print_logo(self) -> None:
-		os.system('cls')
+		os.system('clear')
 		print("""
 | Plutonium | New Desing, Enjoy! | Discord [HaRmX96 @ 8916]
             ╔═╗╦  ╦ ╦═╦═╔═╗╔═╗╦╦ ╦╔╦╗
@@ -124,7 +124,7 @@ class Server(Colours):
 ╚══════════════════════════════════════════════╝
 		""")	
 	def _print_help(self) -> None:
-		os.system('cls')
+		os.system('clear')
 		print("""
 | Plutonium | New Desing, Enjoy! | Discord [HaRmX96 @ 8916]
 
@@ -145,7 +145,7 @@ class Server(Colours):
 ╚═══════════════════════════════╝ ╚═══════════════════════════════╝
 		""")
 	def print_home(self) -> None:
-		os.system('cls')
+		os.system('clear')
 		print("""
 | Plutonium | New Desing, Enjoy! | Discord [HaRmX96 @ 8916]
 
